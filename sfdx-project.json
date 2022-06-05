@@ -1,0 +1,24 @@
+{
+  "packageDirectories": [
+    {
+      "path": "src/default",
+      "default": true
+    },
+    {
+      "path": "src/dlrs"
+    },
+    {
+      "path": "src/medallia_xm"
+    },
+    {
+      "path": "src/simpplr"
+    },
+    {
+      "path": "src/unpackaged"
+    }
+  ],
+  "name": "external-logs-for-one-logger",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "54.0"
+}
