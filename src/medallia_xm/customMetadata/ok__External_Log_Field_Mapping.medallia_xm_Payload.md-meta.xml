@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>medallia_xm Payload</label>
+    <protected>false</protected>
+    <values>
+        <field>ok__External_Log_Field_Name__c</field>
+        <value xsi:type="xsd:string">medallia_xm__JSON__c</value>
+    </values>
+    <values>
+        <field>ok__External_Log_Import__c</field>
+        <value xsi:type="xsd:string">medallia_xm</value>
+    </values>
+    <values>
+        <field>ok__Log_Field_Name__c</field>
+        <value xsi:type="xsd:string">ok__Payload__c</value>
+    </values>
+</CustomMetadata>
