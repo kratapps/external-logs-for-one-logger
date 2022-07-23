@@ -13,21 +13,46 @@ This repository contains One Logger external log configurations.
 Each configuration imports logs from third-party solutions into One Logger.
 
 All configurations are available as unmanaged packages, 
-or you can directly deploy any configuration you need.
+or you can directly deploy any configuration you need 
+from corresponding source directory.
 
 ## Declarative Lookup Rollup Summaries Tool
 
-[//]: # ([![Install Production]&#40;https://img.shields.io/badge/Unmanaged%20Package-Install%20Production-cyan&#41;]&#40;https://login.salesforce.com/packaging/installPackage.apexp?p0=04t&#41;)
-[//]: # ([![Install Sandbox]&#40;https://img.shields.io/badge/Unmanaged%20Package-Install%20Sandbox-cyan&#41;]&#40;https://test.salesforce.com/packaging/installPackage.apexp?p0=04t&#41;)
+[![Install Production](https://img.shields.io/badge/Unmanaged%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFZ8)
+[![Install Sandbox](https://img.shields.io/badge/Unmanaged%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFZ8)
 
 Directory: src/dlrs  
-Version ID: ?
+Package Name: DLRS Logs for One Logger   
+Package ID: 0337Q000000DpFo  
+Version ID: 04t7Q000000EFdV  
+
+Fields mappings:
+
+| External Log Field    | One Logger Log Field |
+|-----------------------|----------------------|
+| LastModifiedDate      | ok__Datetime__c      |
+| dlrs__ErrorMessage__c | ok__Message__c       |
+| dlrs__ParentId__c     | ok__SObject_Id__c    |
+| dlrs__ParentObject__c | ok__SObject_Type__c  |
 
 ## Medallia
 
-[//]: # ([![Install Production]&#40;https://img.shields.io/badge/Unmanaged%20Package-Install%20Production-cyan&#41;]&#40;https://login.salesforce.com/packaging/installPackage.apexp?p0=04t&#41;)
-[//]: # ([![Install Sandbox]&#40;https://img.shields.io/badge/Unmanaged%20Package-Install%20Sandbox-cyan&#41;]&#40;https://test.salesforce.com/packaging/installPackage.apexp?p0=04t&#41;)
+[![Install Production](https://img.shields.io/badge/Unmanaged%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFZI)
+[![Install Sandbox](https://img.shields.io/badge/Unmanaged%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFZI)
 
 Directory: src/medallia_xm  
-Version ID: ?
+Package Name: Medallia Logs for One Logger  
+Package ID: 0337Q000000DpFy  
+Version ID: 04t7Q000000EFZI  
 
+Fields mappings:
+
+| External Log Field         | One Logger Log Field |
+|----------------------------|----------------------|
+| medallia_xm__ClassName__c  | ok__Class_Name__c    |
+| medallia_xm__Level__c      | ok__Log_Level__c     |
+| medallia_xm__Message__c    | ok__Message__c       |
+| medallia_xm__JSON__c       | ok__Payload__c       |
+| medallia_xm__ObjectName__c | ok__SObject_Type__c  |
+| medallia_xm__StackTrace__c | ok__Stack_Trace__c   |
+| medallia_xm__User__c       | ok__User_Id__c       |
