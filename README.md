@@ -18,8 +18,8 @@ from corresponding source directory.
 
 ## Declarative Lookup Rollup Summaries Tool
 
-[![Install Production](https://img.shields.io/badge/Unmanaged%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFZ8)
-[![Install Sandbox](https://img.shields.io/badge/Unmanaged%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFZ8)
+[![Install Production](https://img.shields.io/badge/Unmanaged%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFdV)
+[![Install Sandbox](https://img.shields.io/badge/Unmanaged%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t7Q000000EFdV)
 
 Directory: src/dlrs  
 Package Name: DLRS Logs for One Logger   
