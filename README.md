@@ -27,7 +27,7 @@ External Log: dlrs__LookupRollupSummaryLog__c
 Package ID: 0337Q000000DpFo  
 Version ID: 04t7Q000000EFdV  
 
-Fields mappings:
+Field mappings:
 
 | External Log Field    | One Logger Log Field |
 |-----------------------|----------------------|
@@ -43,11 +43,11 @@ Fields mappings:
 
 Package Name: Medallia Logs for One Logger  
 Directory: src/medallia_xm  
-External Log: medallia_xm__Log__c
+External Log: medallia_xm__Log__c  
 Package ID: 0337Q000000DpFy  
 Version ID: 04t7Q000000EFZI  
 
-Fields mappings:
+Field mappings:
 
 | External Log Field         | One Logger Log Field |
 |----------------------------|----------------------|
