@@ -1,8 +1,8 @@
-alias=okexternal
-alias_dev=okexternal-dev
+alias=okext
+alias_dev=okext-dev
 
-dlrs_package_id=0337Q000000DpFy # DLRS Logs for One Logger
-medallia_xm_package_id=0337Q000000DpFy # Medallia Logs for One Logger
+dlrs_package_id=033av00000002pp # DLRS Logs for One Logger
+medallia_xm_package_id=033av00000002t3 # Medallia Logs for One Logger
 
 scratch-org:
 	sfdx force:org:create -s -a ${alias} -f config/project-scratch-def.json -d 30
@@ -14,7 +14,7 @@ scratch-org:
 	sfdx force:source:push -u ${alias}
 
 deploy-dev-dlrs:
-	sfdx force:source:deploy -u ${alias_dev} --testlevel RunLocalTests -p src/dlrs
+	sf project deploy start -o ${alias_dev} --testlevel RunLocalTests -p src/dlrs
 
 deploy-dev-medallia_xm:
 	sfdx force:source:deploy -u ${alias_dev} --testlevel RunLocalTests -p src/medallia_xm

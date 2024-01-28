@@ -5,6 +5,7 @@
 # Salesforce cache
 .sfdx/
 .localdevserver/
+.sf/
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
@@ -44,8 +45,4 @@ IlluminatedCloud/
 *.iws
 
 .idea/
-**/flows/**
-**/workflows/**
-**/Address.settings-meta.xml
-.sf/
-src/default/main/
+package-lock.json
