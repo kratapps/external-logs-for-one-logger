@@ -7,6 +7,14 @@
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
+        <field>ok__Default_Log_Level__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ok__External_Log_Namespace__c</field>
+        <value xsi:type="xsd:string">medallia_xm</value>
+    </values>
+    <values>
         <field>ok__External_Log_Object_Name__c</field>
         <value xsi:type="xsd:string">medallia_xm__Log__c</value>
     </values>
