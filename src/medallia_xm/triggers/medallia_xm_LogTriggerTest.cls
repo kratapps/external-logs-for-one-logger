@@ -42,19 +42,19 @@ private class medallia_xm_LogTriggerTest {
     }
 
     static void assertExternalLog(medallia_xm__Log__c externalLog, ok__Log__c log) {
-        System.assert(log.ok__Is_External_Log__c, 'Expected external log.');
-        System.assertEquals(String.valueOf(medallia_xm__Log__c.SObjectType), log.ok__External_Log_Type__c, 'Invalid external log type.');
-        System.assertEquals(externalLog.Id, log.ok__External_Log_Id__c, 'Invalid external log ID.');
-        System.assertEquals('medallia_xm', log.ok__Namespace_Prefix__c, 'Invalid ok__Namespace_Prefix__c.');
-        System.assertEquals(externalLog.medallia_xm__ClassName__c, log.ok__Class_Name__c, 'Invalid ok__Class_Name__c.');
-        System.assertEquals(externalLog.medallia_xm__JSON__c, log.ok__Payload__c, 'Invalid ok__Payload__c.');
-        System.assertEquals(externalLog.medallia_xm__Level__c, log.ok__Log_Level__c, 'Invalid ok__Log_Level__c.');
-        System.assertEquals(externalLog.medallia_xm__Message__c, log.ok__Message__c, 'Invalid ok__Message__c.');
-        System.assertEquals(externalLog.medallia_xm__StackTrace__c, log.ok__Stack_Trace__c, 'Invalid ok__Stack_Trace__c.');
-        System.assertEquals(externalLog.medallia_xm__User__c, log.ok__User__c, 'Invalid ok__User__c.');
-        System.assertEquals(externalLog.medallia_xm__User__c, log.ok__User_Id__c, 'Invalid ok__User_Id__c.');
+        Assert.isTrue(log.ok__Is_External_Log__c, 'Expected external log.');
+        Assert.areEqual(String.valueOf(medallia_xm__Log__c.SObjectType), log.ok__External_Log_Type__c, 'Invalid external log type.');
+        Assert.areEqual(externalLog.Id, log.ok__External_Log_Id__c, 'Invalid external log ID.');
+        Assert.isNull(log.ok__Namespace_Prefix__c, 'Invalid ok__Namespace_Prefix__c.');
+        Assert.areEqual(externalLog.medallia_xm__ClassName__c, log.ok__Class_Name__c, 'Invalid ok__Class_Name__c.');
+        Assert.areEqual(externalLog.medallia_xm__JSON__c, log.ok__Payload__c, 'Invalid ok__Payload__c.');
+        Assert.areEqual(externalLog.medallia_xm__Level__c, log.ok__Log_Level__c, 'Invalid ok__Log_Level__c.');
+        Assert.areEqual(externalLog.medallia_xm__Message__c, log.ok__Message__c, 'Invalid ok__Message__c.');
+        Assert.areEqual(externalLog.medallia_xm__StackTrace__c, log.ok__Stack_Trace__c, 'Invalid ok__Stack_Trace__c.');
+        Assert.areEqual(externalLog.medallia_xm__User__c, log.ok__User__c, 'Invalid ok__User__c.');
+        Assert.areEqual(externalLog.medallia_xm__User__c, log.ok__User_Id__c, 'Invalid ok__User_Id__c.');
         //        System.assertEquals(externalLog.medallia_xm__ObjectIDs__c, log.?, 'Invalid ?.'); todo
-        System.assertEquals(externalLog.medallia_xm__ObjectName__c, log.ok__SObject_Type__c, 'Invalid ok__User_Id__c.');
+        Assert.areEqual(externalLog.medallia_xm__ObjectName__c, log.ok__SObject_Type__c, 'Invalid ok__User_Id__c.');
     }
 
     static List<medallia_xm__Log__c> queryExternalLogs() {
