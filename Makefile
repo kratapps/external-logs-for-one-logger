@@ -14,7 +14,7 @@ scratch-org:
 	sfdx force:source:push -u ${alias}
 
 deploy-dev-dlrs:
-	sf project deploy start -o ${alias_dev} --testlevel RunLocalTests -p src/dlrs
+	sf project deploy start -o ${alias_dev} --testlevel RunLocalTests -d src/dlrs
 
 deploy-dev-medallia_xm:
 	sfdx force:source:deploy -u ${alias_dev} --testlevel RunLocalTests -p src/medallia_xm

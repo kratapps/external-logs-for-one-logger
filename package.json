@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "husky install",
-    "prettier-all": "prettier --write {,*/**/}*.{md,cls,trigger,json}",
+    "prettier-all": "prettier --write **/*.{md,cls,trigger,json}",
     "prettier-staged": "lint-staged"
   },
   "devDependencies": {
     "@kratapps/prettier-config": "^0.1.5",
     "husky": "^7.0.4",
     "lint-staged": "^12.5.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "prettier-plugin-apex": "^1.10.0"
   },
   "lint-staged": {
-    "**/*.{md,cls,json}": [
+    "**/*.{md,cls,trigger,json,}": [
       "prettier --write"
     ]
   }

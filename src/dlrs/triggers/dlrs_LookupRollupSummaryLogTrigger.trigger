@@ -1,10 +1,9 @@
 /**
- * Import external logs from Declarative Lookup Rollup Summaries Tool package to One Logger.
- * Usually, we would run the trigger only after insert.
- * For DLRS, we need to run after update as well, because the package is updating existing logs if they occur more than once.
- * 
- * https://kratapps.com/one-logger/plugins/external-logs-for-one-logger/
+ * Import external logs from the Declarative Lookup Rollup Summaries (DLRS) Tool package into One Logger.
+ * Typically, the trigger is executed only after insertion. However, for DLRS, it is necessary to run the trigger after an update as well. This is due to the package's functionality of updating existing logs when they occur more than once.
+ *
+ * https://one-logger.com/extensions/external-logs-for-one-logger
  */
-trigger dlrs_LookupRollupSummaryLogTrigger on dlrs__LookupRollupSummaryLog__c (after insert, after update) {
+trigger dlrs_LookupRollupSummaryLogTrigger on dlrs__LookupRollupSummaryLog__c(after insert, after update) {
     ok.Logger.publishExternalLogs(Trigger.new);
 }
