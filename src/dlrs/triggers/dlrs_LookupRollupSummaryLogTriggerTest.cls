@@ -73,7 +73,7 @@ private class dlrs_LookupRollupSummaryLogTriggerTest {
             'Invalid external log type.'
         );
         Assert.areEqual(externalLog.Id, log.ok__External_Log_Id__c, 'Invalid external log ID.');
-        Assert.areEqual('dlrs', log.ok__Namespace_Prefix__c, 'Invalid ok__Namespace_Prefix__c.');
+        Assert.isNull(log.ok__Namespace_Prefix__c, 'Invalid ok__Namespace_Prefix__c.');
         Assert.areEqual(externalLog.LastModifiedDate, log.ok__Datetime__c, 'Invalid ok__Datetime__c.');
         Assert.areEqual('ERROR', log.ok__Log_Level__c, 'Invalid ok__Log_Level__c.'); // ERROR is default for external logs
         Assert.areEqual(externalLog.dlrs__ErrorMessage__c, log.ok__Message__c, 'Invalid ok__Message__c.');
