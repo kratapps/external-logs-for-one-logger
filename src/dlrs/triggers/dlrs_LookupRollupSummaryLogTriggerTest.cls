@@ -1,7 +1,5 @@
 /**
  * Test class for dlrs_LookupRollupSummaryLogTrigger.
- *
- * https://one-logger.com/extensions/external-logs-for-one-logger
  */
 @IsTest
 private class dlrs_LookupRollupSummaryLogTriggerTest {

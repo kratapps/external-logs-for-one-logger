@@ -1,7 +1,5 @@
 /**
  * Test class for medallia_xm_LogTrigger.
- *
- * https://one-logger.com/extensions/external-logs-for-one-logger
  */
 @IsTest
 private class medallia_xm_LogTriggerTest {
